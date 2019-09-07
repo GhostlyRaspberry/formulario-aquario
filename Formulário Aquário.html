@@ -1,0 +1,43 @@
+<html>
+	<meta lange="pt-BR" />
+	<head>
+<meta charset="utf-8"/>
+		<title>Compra de Aquário</title>
+	</head>
+	<style>
+		div {
+		background-color:  #f2f2f2;
+		width: 170px;
+		border: 1px solid #0d0d0d;
+		padding: 20px;
+		margin: 5px;
+		}
+	</style>
+	<body>
+		<div>
+			<form>
+				<b>Produtos</b><br><br>	
+				<select name="Aquários">
+					<optgroup label="Aquários">
+					<option value="1">Aquário 43L</option>
+					<option value="2">Aquário 84L</option>
+					</optgroup>
+				</select>
+				<button type="button" onclick="alert('Este botão não faz nada, só está aqui porque estou tentando fazer igual ao exemplo.')">+</button>
+				<br><br><br><br><b>Complementos</b><br><br>
+				<input type="radio" name="Complementos" value="Movel+Luminária">Móvel + Luminária<br>
+				<input type="radio" name="Complementos" value="Luminária">Luminária<br>
+				<input type="radio" name="Complementos" value="Só Vidro">Só Vidro<br><br>
+				<input type="checkbox" name="Complementos" value="Presente">Entrega como Presente<br>
+				<br><br><b>Lista de Compras</b><br><br>
+				<textarea rows="12" cols="20"></textarea>
+				<br><br>Valor Total:
+				<input type="text" name="Valor Total" size="7">
+<!--Tentei usar a tag <output> aqui para fazer um valor diferente aparecer dependendo das opções selecionadas, mas me pareceu que essa ideia precisaria de JavaScript-->
+				<br><br>
+				<button type="submit" onclick="alert('Aquário adicionado ao Carrinho')">Finalizar</button>
+				<button type="reset" onclick="alert('Compra cancelada')">Cancelar</button>
+			</form>
+		</div>
+	</body>
+</html>
